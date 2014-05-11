@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="styles/all.css" type="text/css"/>
+</head>
+<body>
+<div id="main">
+    <div class="board"></div>
+    <nav class="playerInfo">
+        <span class="player-text"></span>
+        <div id="player-icon" class=""></div>
+    </nav>
+</div>
+
+<script type="text/javascript" src="js/vendor/jquery.js"></script>
+<script type="text/javascript" src="js/src/core.js"></script>
+<script type="text/javascript" src="js/src/view.js"></script>
+<script>
+    var model = new Model();
+    UI.initialize({
+        rowCount : 6,
+        colCount: 7,
+        model : model
+    });
+</script>
+</body>
+</html>
